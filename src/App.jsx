@@ -107,13 +107,13 @@ const App = () => {
           <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 bg-blue-100 dark:bg-blue-900 rounded-full text-blue-800 dark:text-blue-200 text-sm font-medium mb-6 animate-pulse">
               <Zap className="w-4 h-4 mr-2" />
-              FastZ API Platform
+              GenZ API Platform
             </div>
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
-              TOPAZ API
+              NIXORACLE API
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              The ultimate API testing platform with 500+ endpoints. Built with TypeScript for reliability and speed.
+              The ultimate API platform with 500+ endpoints. Built with TypeScript for reliability and speed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
@@ -190,7 +190,7 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
-              <h3 className="text-2xl font-bold mb-4">TOPAZ API</h3>
+              <h3 className="text-2xl font-bold mb-4">NIXORACLE API</h3>
               <p className="text-gray-400 mb-6 max-w-md">
                 The most comprehensive API testing platform with lightning-fast performance and enterprise-grade security.
               </p>
@@ -235,7 +235,7 @@ const App = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>© 2025 GlobalTechInfo. All rights reserved.</p>
+            <p>© 2025 NixOracle. All rights reserved.</p>
           </div>
         </div>
       </footer>
