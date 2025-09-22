@@ -6,7 +6,8 @@ import {
   X, CheckCircle, AlertCircle, Copy, Upload, Home, Github, Twitter,
   Linkedin, Mail, ArrowRight, Zap, Code, Shield, Globe
 } from 'lucide-react';
-
+import endpoints from './config/endpoints.js'
+/*
 // Import endpoints from external file (simulated here)
 const endpoints = {
   download: [
@@ -55,6 +56,7 @@ const endpoints = {
     }
   ]
 };
+*/
 
 const categoryIcons = {
   download: Download,
@@ -500,7 +502,7 @@ const App = () => {
                       <code className="px-2 py-1 bg-gray-100 dark:bg-gray-900 rounded text-sm">{endpoint.url}</code>
                     </td>
                     <td className="py-3 px-4">
-                      <span className="px-2 py-1 bg-gray-100 dark:bg-gray-900 rounded text-xs">
+                      <span className="px-2 py-1 bg-red-100 dark:bg-red-900 rounded text-xs">
                         {endpoint.responseType}
                       </span>
                     </td>
