@@ -2,8 +2,8 @@
   "name": "genzapi",
   "version": "1.0.0",
   "description": "GENZ Rest API Platform - A comprehensive API testing and documentation platform",
-  "private": true,
-  "type": "commonjs",
+  "private": false,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
