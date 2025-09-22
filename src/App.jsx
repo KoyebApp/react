@@ -135,10 +135,10 @@ const App = () => {
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
           {[
-            { icon: Zap, label: "500+ Endpoints", value: "FastZ", color: "blue" },
-            { icon: Code, label: "Built with", value: "TypeScript", color: "purple" },
+            { icon: Zap, label: "500+ Endpoints", value: "GenZ+FastZ", color: "blue" },
+            { icon: Code, label: "Built with", value: "TypeScript+React", color: "purple" },
             { icon: Shield, label: "Secure & Reliable", value: "99.9% Uptime", color: "green" },
-            { icon: Globe, label: "Global CDN", value: "< 50ms", color: "orange" }
+            { icon: Globe, label: "Estimated Response", value: "< 950ms", color: "orange" }
           ].map((stat, index) => {
             const IconComponent = stat.icon;
             return (
