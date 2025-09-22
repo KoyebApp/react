@@ -321,3 +321,99 @@ export const endpoints = {
 
 export default endpoints;
 ```
+
+# 🚀 Deployment InstructionsStep 1: Project Setup# Create the project
+npm create vite@latest topaz-api-platform -- --template react
+cd topaz-api-platform
+
+# Install dependencies
+npm install react react-dom lucide-react clsx tailwind-merge
+
+# Install dev dependencies
+npm install -D @types/react @types/react-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser @vitejs/plugin-react autoprefixer postcss tailwindcss typescript vite eslint eslint-plugin-react-hooks eslint-plugin-react-refresh @tailwindcss/forms
+
+# Initialize Tailwind CSS
+npx tailwindcss init -pStep 2: File Structure Setup# Create directory structure
+mkdir -p src/{components,config,hooks,utils,styles}
+mkdir -p src/components/ui
+mkdir -p publicReplace the generated files with the configurations I provided above, then copy your React component into src/App.jsx.Step 3: Update package.jsonAdd the additional scripts and dependencies from the package.json file I provided.Step 4: Deployment OptionsOption 1: Vercel (Recommended)# Install Vercel CLI
+npm i -g vercel
+
+# Build and deploy
+npm run build
+vercel --prodOption 2: Netlify# Install Netlify CLI
+npm install -g netlify-cli
+
+# Build and deploy
+npm run build
+netlify deploy --prod --dir=distOption 3: GitHub Pages# Install gh-pages
+npm install -D gh-pages
+
+# Add to package.json scripts:
+"predeploy": "npm run build",
+"deploy": "gh-pages -d dist"
+
+# Deploy
+npm run deployStep 5: Environment SetupCopy .env.example to .env.localFill in your API configurationsUpdate the endpoints configuration in src/config/endpoints.jsStep 6: Build and Test# Development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Type checking (if using TypeScript)
+npm run type-check
+
+# Linting
+npm run lint
+npm run lint:fix
+
+# Project Structure and File Placement1. Main App ComponentFile: src/App.jsx// Copy the ENTIRE artifact code here
+import React, { useState, useEffect } from 'react';
+// ... rest of the artifact code2. Project Setup Commands# Create new React project with Vite
+npm create vite@latest topaz-api-platform -- --template react
+cd topaz-api-platform
+
+# Install required dependencies
+npm install lucide-react clsx tailwind-merge
+
+# Install Tailwind CSS
+npm install -D tailwindcss postcss autoprefixer @tailwindcss/forms
+npx tailwindcss init -p3. Replace Default FilesReplace src/App.jsx with the entire artifact codeReplace src/App.css with:/* Delete everything, we'll use Tailwind */Replace src/index.css with:@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}Replace tailwind.config.js with the config I provided earlier4. Create Endpoints FileFile: src/config/endpoints.jsexport const endpoints = {
+  download: [
+    { 
+      name: "YouTube Audio", 
+      method: "GET", 
+      inputs: ["url"], 
+      url: "/api/dl/ytmp3",
+      status: "active",
+      description: "Download audio from YouTube videos in MP3 format",
+      responseType: "json",
+      plan: "free"
+    },
+    // Add more endpoints here
+  ],
+  tools: [
+    // Add tool endpoints here
+  ]
+};Then update the import in App.jsx:// At the top of App.jsx, replace the hardcoded endpoints with:
+import { endpoints } from './config/endpoints.js';5. File Structure Overviewtopaz-api-platform/
+├── src/
+│   ├── config/
+│   │   └── endpoints.js          <- Your API endpoints
+│   ├── App.jsx                   <- Main artifact code goes here
+│   ├── main.jsx                  <- Keep as is
+│   └── index.css                 <- Tailwind imports
+├── tailwind.config.js            <- Tailwind config
+├── package.json                  <- Dependencies
+└── index.html                    <- Keep as is6. Run the Projectnpm run dev
