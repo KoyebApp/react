@@ -136,7 +136,7 @@ const App = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
           {[
             { icon: Zap, label: "500+ Endpoints", value: "GenZ+FastZ", color: "blue" },
-            { icon: Code, label: "Built with", value: "TypeScript+React", color: "purple" },
+            { icon: Code, label: "Built with", value: "TypeScript", color: "purple" },
             { icon: Shield, label: "Secure & Reliable", value: "99.9% Uptime", color: "green" },
             { icon: Globe, label: "Estimated Response", value: "< 950ms", color: "orange" }
           ].map((stat, index) => {
