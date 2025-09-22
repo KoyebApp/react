@@ -78,7 +78,7 @@ const categoryIcons = {
   search: Search
 };
 
-const APITestingPlatform = () => {
+const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -686,4 +686,4 @@ const APITestingPlatform = () => {
   );
 };
 
-export default APITestingPlatform;
+export default App;
